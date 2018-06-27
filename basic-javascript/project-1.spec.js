@@ -32,14 +32,20 @@ const {multiplyByTen,
 
 // const allFunctions = require('./project-1.js')
 
-  describe('Multiply a number by ten', () => {
+describe('Test all functions', 
+    () => {
     it('should multiply the supplied value by 10', () => {
       const fifty = multiplyByTen(5)
       expect(fifty).toBe(50)
     })
 
-    // it ('should do something', () => {
-    //   //next test
-    //   expect(expectedResult).condition1(expectedValue)
-    // })
+    it('should subtract 5 from given number', () => {
+      const ten = subtractFive(15)
+      expect(ten).toBe(10)
+    })
+
+    it('should compare the length of two strings and confirm they are equal', () => {
+      const equal = areSameLength('four', 'five')
+      expect(equal).toBe(true)
+    })
   })
