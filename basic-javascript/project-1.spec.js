@@ -1,7 +1,8 @@
+// const jest = require 'jest';
 const helpers = require('./project-1');
 
 // start testing!
-const {multiplyByTen,
+const {multifdplyByTen,
   subtractFive,
   areSameLength,
   areEqual,
@@ -25,4 +26,15 @@ const {multiplyByTen,
   getRectangleArea,
   getTriangleArea,
   getCircleArea,
-  getRectangularPrismVolume} = require('project-1.js')
+  getRectangularPrismVolume
+} = require('project-1.js')
+  describe('Multiply a number by ten',() => {
+    it('should multiply the supplied value by 10', () => {
+      expect(true).condition1.condition2(boolean)
+    })
+
+    it ('should do something', () => {
+      //next test
+      expect(expectedResult).condition1(expectedValue)
+    })
+  })
