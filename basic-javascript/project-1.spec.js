@@ -109,13 +109,13 @@ describe('Test all functions',
       expect(remainder).toBe(4)
     })
  
-    it('should multiply two numbers', () => {
-      const even = multiply(4, 10)
+    it('should determine if result is even', () => {
+      const even = isEven(4, 10)
       expect(even).toBe(true)
     })
    
-    it('should determine if number is odd', () => {
-      const odd = multiply(4, 10)
+    it('should determine if result is odd', () => {
+      const odd = isOdd(4, 10)
       expect(odd).toBe(false)
     })
 // david to 66
@@ -131,7 +131,7 @@ describe('Test all functions',
     })
 
     it('should raise number to specified power', () => {
-      const raised = raiseToPower(3,3)
+      const raised = raiseToPower(3, 3)
       expect(raised).toBe(9)
     })
 
@@ -148,7 +148,7 @@ describe('Test all functions',
       const round = roundUp(2.4)
       expect(round).toBe(3)
     })
-    
+
     it('should add an exclamation point to end of a string', () => {
       const str = addExclamationPoint('string')
       expect(str).toBe('string!')
