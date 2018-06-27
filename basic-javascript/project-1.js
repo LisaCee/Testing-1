@@ -112,7 +112,35 @@ const getRectangularPrismVolume = (length, width, height) => {
   return width * height * length;
 };
 
-module.exports = {
+// module.exports = {
+//   multiplyByTen,
+//   subtractFive,
+//   areSameLength,
+//   areEqual,
+//   lessThanNinety,
+//   greaterThanFifty,
+//   add,
+//   subtract,
+//   divide,
+//   multiply,
+//   getRemainder,
+//   isEven,
+//   isOdd,
+//   square,
+//   cube,
+//   raiseToPower,
+//   roundNumber,
+//   roundUp,
+//   addExclamationPoint,
+//   combineNames,
+//   getGreeting,
+//   getRectangleArea,
+//   getTriangleArea,
+//   getCircleArea,
+//   getRectangularPrismVolume
+// };
+
+const allFunctions = {
   multiplyByTen,
   subtractFive,
   areSameLength,
@@ -138,4 +166,6 @@ module.exports = {
   getTriangleArea,
   getCircleArea,
   getRectangularPrismVolume
-};
+}
+
+module.exports = {allFunctions}
