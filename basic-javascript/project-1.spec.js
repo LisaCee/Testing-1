@@ -41,6 +41,69 @@ describe('project 1 test', () => {
     it('shouldMultiply', () => {
         expect(helpers.multiply(3, 3)).toBe(9);
     })
+
+    it('shouldGetRemainder', () => {
+        expect(helpers.getRemainder(13, 5)).toBe(3);
+    })
+
+    it('shouldIsEven', () => {
+        expect(helpers.isEven(10)).toBeTruthy()
+    })
+
+    it('shouldIsOdd', () => {
+        expect(helpers.isOdd(13)).toBeTruthy();
+    })
+
+    it('shouldSquare', () => {
+        expect(helpers.square(3)).toBe(9);
+    })
+
+    it('shouldCube', () => {
+        expect(helpers.cube(3)).toBe(27)
+    })
+
+    it('shouldRaiseToPower', () => {
+        expect(helpers.raiseToPower(3, 3)).toBe(27)
+    })
+
+    it('shouldRoundNumber', () => {
+        expect(helpers.roundNumber(11)).toBe(11);
+    })
+
+    it('shouldRoundUp', () => {
+        expect(helpers.roundUp(12.6)).toBe(13);
+    })
+
+    it('shouldAddExclamationPoint', () => {
+        expect(helpers.addExclamationPoint("hello")).toContain('!')
+    })
+
+    it('shouldCombineNames', () => {
+        expect(helpers.combineNames("Steve", "Irwin")).toContain(" ")
+    })
+
+    it('shouldGreeting', () => {
+        expect(helpers.getGreeting("Steve")).toContain('Hello');
+    })
+
+    it('shouldGetRechtangleArea', () => {
+        expect(helpers.getRectangleArea(3, 3)).toBe(9);
+    })
+
+    it('ShouldGetTriangleArea', () => {
+        expect(helpers.getTriangleArea(2, 4)).toBe(4);
+    })
+
+    it('shouldGetCircleArea', () => {
+        expect(helpers.getCircleArea(2)).toBe(Math.PI * 4);
+    })
+
+    it('shouldGetRechtanglePrismVolumne', () => {
+        expect(helpers.getRectangularPrismVolume(3, 3, 3)).toBe(27)
+    })
+
+
+
 })
 
 // start testing!
