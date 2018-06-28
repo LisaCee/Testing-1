@@ -106,7 +106,7 @@ describe('Test all functions',
 
     it('should get remainder', () => {
       const remainder = getRemainder(40, 10)
-      expect(remainder).toBe(4)
+      expect(remainder).toBe(0)
     })
  
     it('should determine if result is even', () => {
@@ -132,7 +132,7 @@ describe('Test all functions',
 
     it('should raise number to specified power', () => {
       const raised = raiseToPower(3, 3)
-      expect(raised).toBe(9)
+      expect(raised).toBe(27)
     })
 
     it('round number to nearest whole number', () => {
@@ -152,5 +152,25 @@ describe('Test all functions',
     it('should add an exclamation point to end of a string', () => {
       const str = addExclamationPoint('string')
       expect(str).toBe('string!')
+    })
+    it('should combine two names into 1', () => {
+      const name = combineNames('lambda', 'school')
+      expect(name).toBe('lambda school')
+    })
+    it('should return a greeting to name passed', () => {
+      const name = getGreeting('Jesse')
+      expect(name).toBe('Hello Jesse!')
+    })
+    it('should return the area of rectangle passed', () => {
+      const rectangle = getRectangleArea(10,10)
+      expect(rectangle).toBe(100)
+    })
+    it('should return the area of triangle passed', () => {
+      const triangle = getTriangleArea(10,10)
+      expect(triangle).toBe(50)
+    })
+    it('should return the area of circle passed', () => {
+      const circle = getCircleArea(50)
+      expect(circle).toBe(7853.981633974483)
     })
   })
