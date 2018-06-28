@@ -11,11 +11,6 @@ it('Should return the greater of two numbers', () => {
 })
 
 it('Should return the correct language greeting', () => {
-    const german = funcs.greeting('German');
-    const any = funcs.greeting();
-
-    expect(german).toBe('Guten Tag!');
-    expect(german).toBeDefined();
-    expect(any).toEqual('Hello!');
     
 })
+
