@@ -37,14 +37,10 @@ const filter = (elements, cb) => {
 };
 
 const flatten = elements => {
-  const flattenedArr = reduce(
-    elements,
-    (memo, item) => {
+  const flattenedArr = reduce(elements,(memo, item) => {
       if (Array.isArray(item)) return memo.concat(flatten(item));
       return memo.concat(item);
-    },
-    []
-  );
+    },[]);
   return flattenedArr;
 };
 
