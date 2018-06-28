@@ -1,176 +1,150 @@
-// const jest = require 'jest';
 const helpers = require('./project-1');
 
-// start testing!
 
-const {multiplyByTen,
-  subtractFive,
-  areSameLength,
-  areEqual,
-  lessThanNinety,
-  greaterThanFifty,
-  add,
-  subtract,
-  divide,
-  multiply,
-  getRemainder,
-  isEven,
-  isOdd,
-  square,
-  cube,
-  raiseToPower,
-  roundNumber,
-  roundUp,
-  addExclamationPoint,
-  combineNames,
-  getGreeting,
-  getRectangleArea,
-  getTriangleArea,
-  getCircleArea,
-  getRectangularPrismVolume
-} = require('./project-1.js')
+describe('Test all Project 1 functions', () => {
 
-// const allFunctions = require('./project-1.js')
-
-describe('Test all functions', 
-    () => {
     it('should multiply the supplied value by 10', () => {
-      const fifty = multiplyByTen(5)
+      const fifty = helpers.multiplyByTen(5)
       expect(fifty).toBe(50)
     })
 
     it('should subtract 5 from given number', () => {
-      const ten = subtractFive(15)
+      const ten = helpers.subtractFive(15)
       expect(ten).toBe(10)
     })
 
     it('should compare the length of two strings and confirm they are equal', () => {
-      const equal = areSameLength('four', 'five')
+      const equal = helpers.areSameLength('four', 'five')
       expect(equal).toBe(true)
     })
 
     it('should compare two variables and confirm they are equal', () => {
-      const equal = areEqual('left', 'left')
+      const equal = helpers.areEqual('left', 'left')
       expect(equal).toBe(true)
     })
 
     it('should compare two variables and confirm they are equal', () => {
-      const equal = areEqual(5, 5)
+      const equal = helpers.areEqual(5, 5)
       expect(equal).toBe(true)
     })
 
     it('should compare two variables and confirm they are equal', () => {
-      const equal = areEqual(5, (4 + 1))
+      const equal = helpers.areEqual(5, (4 + 1))
       expect(equal).toBe(true)
     })
 
     it('should confirm number is less than 90', () => {
-      const equal = lessThanNinety(105)
+      const equal = helpers.lessThanNinety(105)
       expect(equal).toBe(false)
     })
 
     it('should confirm number is greater than 90', () => {
-      const equal = lessThanNinety(55)
+      const equal = helpers.lessThanNinety(55)
       expect(equal).toBe(true)
     })
 
     it('should confirm number is greater than 50', () => {
-      const equal = greaterThanFifty(55)
+      const equal = helpers.greaterThanFifty(55)
       expect(equal).toBe(true)
     })
 
     it('should confirm number is greater than 50', () => {
-      const equal = greaterThanFifty(75-10)
+      const equal = helpers.greaterThanFifty(75-10)
       expect(equal).toBe(true)
     })
 
     it('should add two numbers', () => {
-      const forty = add(22, 18)
+      const forty = helpers.add(22, 18)
       expect(forty).toBe(40)
     })
 
     it('should subtract two numbers', () => {
-      const forty = subtract(50, 10)
+      const forty = helpers.subtract(50, 10)
       expect(forty).toBe(40)
     })
 
     it('should divide two numbers', () => {
-      const divided = divide(12, 3)
+      const divided = helpers.divide(12, 3)
       expect(divided).toBe(4)
     })
 
     it('should multiply two numbers', () => {
-      const forty = multiply(4, 10)
+      const forty = helpers.multiply(4, 10)
       expect(forty).toBe(40)
     })
 
     it('should get remainder', () => {
-      const remainder = getRemainder(40, 10)
+      const remainder = helpers.getRemainder(40, 10)
       expect(remainder).toBe(0)
     })
  
     it('should determine if result is even', () => {
-      const even = isEven(4, 10)
+      const even = helpers.isEven(4, 10)
       expect(even).toBe(true)
     })
    
     it('should determine if result is odd', () => {
-      const odd = isOdd(4, 10)
+      const odd = helpers.isOdd(4, 10)
       expect(odd).toBe(false)
     })
-// david to 66
-// jesse 67 down
+
     it('should return number squared', () => {
-      const squared = square(2)
+      const squared = helpers.square(2)
       expect(squared).toBe(4)
     })
 
     it('should return number cubed', () => {
-      const cubed = cube(2)
+      const cubed = helpers.cube(2)
       expect(cubed).toBe(8)
     })
 
     it('should raise number to specified power', () => {
-      const raised = raiseToPower(3, 3)
+      const raised = helpers.raiseToPower(3, 3)
       expect(raised).toBe(27)
     })
 
     it('round number to nearest whole number', () => {
-      const round = roundNumber(2.6)
+      const round = helpers.roundNumber(2.6)
       expect(round).toBe(3)
     })
 
     it('round number to nearest whole number', () => {
-      const round = roundNumber(2.4)
+      const round = helpers.roundNumber(2.4)
       expect(round).toBe(2)
     })
+
     it('round number up to nearest whole number', () => {
-      const round = roundUp(2.4)
+      const round = helpers.roundUp(2.4)
       expect(round).toBe(3)
     })
 
     it('should add an exclamation point to end of a string', () => {
-      const str = addExclamationPoint('string')
+      const str = helpers.addExclamationPoint('string')
       expect(str).toBe('string!')
     })
+
     it('should combine two names into 1', () => {
-      const name = combineNames('lambda', 'school')
+      const name = helpers.combineNames('lambda', 'school')
       expect(name).toBe('lambda school')
     })
+
     it('should return a greeting to name passed', () => {
-      const name = getGreeting('Jesse')
+      const name = helpers.getGreeting('Jesse')
       expect(name).toBe('Hello Jesse!')
     })
+
     it('should return the area of rectangle passed', () => {
-      const rectangle = getRectangleArea(10,10)
+      const rectangle = helpers.getRectangleArea(10,10)
       expect(rectangle).toBe(100)
     })
+
     it('should return the area of triangle passed', () => {
-      const triangle = getTriangleArea(10,10)
+      const triangle = helpers.getTriangleArea(10,10)
       expect(triangle).toBe(50)
     })
+
     it('should return the area of circle passed', () => {
-      const circle = getCircleArea(50)
+      const circle = helpers.getCircleArea(50)
       expect(circle).toBe(7853.981633974483)
     })
   })
