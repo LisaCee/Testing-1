@@ -82,7 +82,8 @@ describe('Arrays', () => {
     })
 
     it('flattenWorks', () => {
-      expect(flatten([1, 2, [1, 6, [10]]], (acc, val) => acc.concat(val), [])).toEqual([1 ,2,1,6,10])
+      expect(flatten([1, 2, [1, 6, [10]]], (acc, val) => acc.concat(val),[]))
+      .toEqual([1 ,2,1,6,10])
     })
 
 
