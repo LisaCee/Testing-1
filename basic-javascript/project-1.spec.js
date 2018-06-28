@@ -1,6 +1,5 @@
 const helpers = require('./project-1');
 
-
 describe('Test all Project 1 functions', () => {
 
     it('should multiply the supplied value by 10', () => {
